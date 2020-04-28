@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Sistema de Recomendación</title>
+</head>
+<body>
+
+    <header>
+        <div class="authors">
+            <h2>Marian<strong>Quevedo</strong></h2>
+            <h2>Juan<strong>Bravo</strong></h2>
+        </div>
+        <h1>SISTEMA DE RECOMENDACIÓN</h1>
+    </header>
+   
+    <div class="bigContainer">
+        <div class="container">
+            <h4>Seleccione una persona</h4>
+    
+            <select name="data" id="select">
+            </select>
+        </div>
+    
+        <div class="container container--blue">
+            <div class="row">
+                <h4>Características</h4>
+                <p>| Importancia</p>
+    
+                
+            </div>
+
+            <div class="row">
+                <div class="range">
+                    <label for="height">Altura</label>
+                    <input type="range" id="height" value="1" step="0.01" min="0" max="1">
+                </div>
+    
+                <div class="range">
+                    <label for="pets">Mascotas</label>
+                    <input type="range" id="pets" value="1" step="0.01" min="0" max="1">
+                </div>
+                
+                <div class="range">
+                    <label for="weight">Peso</label>
+                    <input type="range" id="weight" value="1" step="0.01" min="0" max="1">
+                </div>
+    
+                <div class="range">
+                    <label for="age">Edad</label>
+                    <input type="range" id="age" value="1" step="0.01" min="0" max="1">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div class="graphic">
+        <h3 class="similarity">SIMILITUD</h3>
+
+        <h3 class="students">ESTUDIANTES</h3>
+
+        <div class="verticalAxis"></div>
+
+        <div class="horizontalAxis"></div>
+
+        <div class="images"></div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+    
+</body>
+</html>
