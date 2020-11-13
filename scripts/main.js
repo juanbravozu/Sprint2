@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
 
             //Añade el resultado a la lista
             results.push({
-                name: e.name,
+                name: data.name,
                 result: resultValue,
             });
         });
