@@ -18,7 +18,7 @@ window.addEventListener('load', () => {
     petsRange.addEventListener('input', updateComparison);
 
     //Se llama al archivo .csv con los datos
-    fetch('../resources/sprint2_data.csv')
+    fetch('./resources/sprint2_data.csv')
     .then(response => response.text())
     .then(data => {
         //Se dividen los datos por filas. Cada fila contiene los datos de una persona
